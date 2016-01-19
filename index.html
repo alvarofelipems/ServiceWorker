@@ -50,8 +50,7 @@
           reg.pushManager.subscribe({userVisibleOnly: true})
             .then(function(subscription) {
               // The subscription was successful
-              isPushEnabled = true;
-              
+              console.log('Subscription OK!');
               // Update status to subscribe current user on server, and to let
               // other users know this user has subscribed
               var endpoint = subscription.endpoint;
